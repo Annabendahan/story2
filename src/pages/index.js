@@ -41,19 +41,19 @@ class IndexPage extends Component {
           count: Math.floor(Math.random() * (95 - 61 + 1) + 61),
         })
       }.bind(this),
-      3200
+      1200
     )
     setTimeout(
       function () {
         this.setState({ count: 100 })
       }.bind(this),
-      3400
+      1400
     )
     setTimeout(
       function () {
-        this.handleGo()
+        // this.handleGo()
       }.bind(this),
-      6700
+      1700
     )
   }
 
