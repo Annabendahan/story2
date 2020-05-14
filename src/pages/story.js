@@ -28,6 +28,7 @@ class Story extends Component {
 
   componentDidMount = () => {
     this.setState({ mounted: true })
+
     window.addEventListener("scroll", this.handleScroll)
     var element = document.getElementById("top")
     element.scrollIntoView()
@@ -60,22 +61,22 @@ class Story extends Component {
             this.setState({ projet: this.state.previousProjet })
           }
         }
-        var element = document.getElementById("top")
-        element.scrollIntoView()
-        this.setState({ position: window.scrollY })
       }.bind(this),
-      1000
+      300
     )
 
     setTimeout(
       function () {
+        var element = document.getElementById("top")
+        element.scrollIntoView()
+        this.setState({ position: window.scrollY })
         window.addEventListener("scroll", this.handleScroll)
         this.setState({
           nextProjet: this.state.projet + 1,
           previousProjet: this.state.projet - 1,
         })
       }.bind(this),
-      1500
+      1200
     )
   }
 

@@ -186,10 +186,14 @@ textarea {
   -webkit-appearance: button;
   font: inherit;
 }
+::-webkit-scrollbar {
+  -webkit-appearance: none !important;
+  -webkit-overflow-scrolling: auto !important;
+}
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
-  overflow-y: scroll;
+  scrollbar-width: none;
 }
 * {
   box-sizing: inherit;
@@ -206,12 +210,14 @@ body {
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
+  scrollbar-width: none;
 
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
 img {
   max-width: 100%;
   margin-left: 0;
@@ -633,7 +639,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  display: none !important;
 }
 
 .landing {

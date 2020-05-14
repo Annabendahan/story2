@@ -26,9 +26,9 @@ class Comp extends Component {
               scroll to start
             </h4>
             <svg
-              width="100vw"
+              width="150vw"
               height="1"
-              viewBox="0 0 100vw 1"
+              viewBox="0 0 150vw 1"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >

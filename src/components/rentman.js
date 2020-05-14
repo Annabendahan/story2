@@ -5,7 +5,7 @@ import d2 from "../images/d2.png"
 class Rentman extends Component {
   render() {
     return (
-      <div className="project-layout">
+      <div className="project-layout disable-scrollbars ">
         <div className="project-layout__content">
           {" "}
           <img className="me" src={d2} alt="cc" />
