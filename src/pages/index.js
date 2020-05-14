@@ -51,7 +51,7 @@ class IndexPage extends Component {
     )
     setTimeout(
       function () {
-        // this.handleGo()
+        this.handleGo()
       }.bind(this),
       1700
     )
@@ -74,6 +74,11 @@ class IndexPage extends Component {
         <div
           className="landingg"
           style={{
+            width: "100vw",
+            height: "100vh",
+            background: "black",
+            zIndex: 9999,
+
             transform: this.state.mount
               ? "translateY(0vh)"
               : "translateY(-100vh)",
@@ -83,13 +88,27 @@ class IndexPage extends Component {
           <div
             className="hide"
             style={{
+              width: "100vw",
+              height: "100vh",
+              background: "white",
               transform: this.state.show
                 ? "translateY(0vh)"
                 : "translateY(-100vh)",
               transition: "transform .4s cubic-bezier(0.82, 0.0, 0.18, 1.0)",
             }}
           ></div>
-          <p>{this.state.count} %</p>
+          <p
+            style={{
+              position: "absolute",
+              top: "60vh",
+              right: "20vw",
+              fontSize: "5rem",
+              color: "white",
+              fontWeight: 100,
+            }}
+          >
+            {this.state.count} %
+          </p>
         </div>
       </div>
     )
