@@ -62,7 +62,7 @@ class Story extends Component {
         element.scrollIntoView()
         this.setState({ position: window.scrollY })
       }.bind(this),
-      1500
+      2000
     )
 
     setTimeout(
