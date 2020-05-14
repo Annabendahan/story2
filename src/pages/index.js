@@ -74,26 +74,29 @@ class IndexPage extends Component {
         <div
           className="landingg"
           style={{
-            width: "100vw",
-            height: "100vh",
+            width: "120vw",
+            height: "120vh",
+            marginTop: "-10vh",
             background: "black",
             zIndex: 9999,
 
             transform: this.state.mount
               ? "translateY(0vh)"
-              : "translateY(-100vh)",
+              : "translateY(-120vh)",
             transition: "transform 1s cubic-bezier(0.82, 0.0, 0.18, 1.0)",
           }}
         >
           <div
             className="hide"
             style={{
-              width: "100vw",
-              height: "100vh",
+              width: "120vw",
+              marginTop: "-25vh",
+              marginLeft: "-10vh",
+              height: "140vh",
               background: "white",
               transform: this.state.show
                 ? "translateY(0vh)"
-                : "translateY(-100vh)",
+                : "translateY(-120vh)",
               transition: "transform .4s cubic-bezier(0.82, 0.0, 0.18, 1.0)",
             }}
           ></div>
@@ -101,10 +104,11 @@ class IndexPage extends Component {
             style={{
               position: "absolute",
               top: "60vh",
-              right: "20vw",
+              right: "30vw",
               fontSize: "5rem",
               color: "white",
               fontWeight: 100,
+              fontFamily: "Work Sans",
             }}
           >
             {this.state.count} %

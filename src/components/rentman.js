@@ -8,7 +8,7 @@ class Rentman extends Component {
       <div className="project-layout">
         <div className="project-layout__content">
           {" "}
-          <img src={d2} alt="cc" />
+          <img className="me" src={d2} alt="cc" />
           <p>
             Thus, i did an internship in digital marketing in Utrecht, at
             Rentman. <b> I liked the design part</b>, but wanted to go further.
