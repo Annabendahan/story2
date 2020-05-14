@@ -22,6 +22,8 @@ class Story extends Component {
     position: 0,
     projet: 1,
     mounted: false,
+    nextProjet: 2,
+    previousProjet: 0,
   }
 
   componentDidMount = () => {
@@ -50,26 +52,30 @@ class Story extends Component {
         if (window.scrollY > this.state.position) {
           if (this.state.projet !== 12) {
             this.setState({
-              projet: this.state.projet + 1,
+              projet: this.state.nextProjet,
             })
           }
         } else if (window.scrollY < this.state.position) {
           if (this.state.projet !== 1) {
-            this.setState({ projet: this.state.projet - 1 })
+            this.setState({ projet: this.state.previousProjet })
           }
         }
         var element = document.getElementById("top")
         element.scrollIntoView()
         this.setState({ position: window.scrollY })
       }.bind(this),
-      2000
+      1000
     )
 
     setTimeout(
       function () {
         window.addEventListener("scroll", this.handleScroll)
+        this.setState({
+          nextProjet: this.state.projet + 1,
+          previousProjet: this.state.projet - 1,
+        })
       }.bind(this),
-      2500
+      1500
     )
   }
 
