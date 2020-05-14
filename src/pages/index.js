@@ -69,52 +69,49 @@ class IndexPage extends Component {
 
   render() {
     return (
-      <div>
-        {" "}
-        <div
-          className="landingg"
-          style={{
-            width: "140vw",
-            height: "140vh",
-            marginTop: "-20vh",
-            marginLeft: "-20vh",
-            background: "black",
-            zIndex: 9999,
+      <div
+        className="landing"
+        style={{
+          width: "140vw",
+          height: "140vh",
+          marginTop: "-20vh",
+          marginLeft: "-20vw",
+          background: "black",
+          zIndex: 9999,
 
-            transform: this.state.mount
+          transform: this.state.mount
+            ? "translateY(0vh)"
+            : "translateY(-120vh)",
+          transition: "transform 1s cubic-bezier(0.82, 0.0, 0.18, 1.0)",
+        }}
+      >
+        <div
+          className="hide"
+          style={{
+            width: "120vw",
+            marginTop: "-25vh",
+            marginLeft: "-10wv",
+            height: "140vh",
+            background: "white",
+            transform: this.state.show
               ? "translateY(0vh)"
               : "translateY(-120vh)",
-            transition: "transform 1s cubic-bezier(0.82, 0.0, 0.18, 1.0)",
+            transition: "transform .4s cubic-bezier(0.82, 0.0, 0.18, 1.0)",
+          }}
+        ></div>
+        <p
+          style={{
+            position: "absolute",
+            top: "60vh",
+            right: "30vw",
+            fontSize: "5rem",
+            color: "white",
+            fontWeight: 100,
+            fontFamily: "Work Sans",
           }}
         >
-          <div
-            className="hide"
-            style={{
-              width: "120vw",
-              marginTop: "-25vh",
-              marginLeft: "-10vh",
-              height: "140vh",
-              background: "white",
-              transform: this.state.show
-                ? "translateY(0vh)"
-                : "translateY(-120vh)",
-              transition: "transform .4s cubic-bezier(0.82, 0.0, 0.18, 1.0)",
-            }}
-          ></div>
-          <p
-            style={{
-              position: "absolute",
-              top: "60vh",
-              right: "30vw",
-              fontSize: "5rem",
-              color: "white",
-              fontWeight: 100,
-              fontFamily: "Work Sans",
-            }}
-          >
-            {this.state.count} %
-          </p>
-        </div>
+          {this.state.count} %
+        </p>
       </div>
     )
   }
