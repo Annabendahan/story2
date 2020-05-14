@@ -51,7 +51,7 @@ class IndexPage extends Component {
     )
     setTimeout(
       function () {
-        this.handleGo()
+        // this.handleGo()
       }.bind(this),
       1700
     )
@@ -74,9 +74,10 @@ class IndexPage extends Component {
         <div
           className="landingg"
           style={{
-            width: "120vw",
-            height: "120vh",
-            marginTop: "-10vh",
+            width: "140vw",
+            height: "140vh",
+            marginTop: "-20vh",
+            marginLeft: "-20vh",
             background: "black",
             zIndex: 9999,
 
