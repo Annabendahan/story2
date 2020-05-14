@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import { navigate } from "@reach/router"
+import "../components/style.scss"
 
 class IndexPage extends Component {
   state = {
@@ -51,7 +52,7 @@ class IndexPage extends Component {
     )
     setTimeout(
       function () {
-        // this.handleGo()
+        this.handleGo()
       }.bind(this),
       1700
     )
@@ -72,12 +73,12 @@ class IndexPage extends Component {
       <div
         className="landing"
         style={{
-          width: "140vw",
-          height: "140vh",
-          marginTop: "-20vh",
-          marginLeft: "-20vw",
-          background: "black",
-          zIndex: 9999,
+          // width: "140vw",
+          // height: "140vh",
+          // marginTop: "-20vh",
+          // marginLeft: "-20vw",
+          // background: "black",
+          // zIndex: 9999,
 
           transform: this.state.mount
             ? "translateY(0vh)"
@@ -88,11 +89,11 @@ class IndexPage extends Component {
         <div
           className="hide"
           style={{
-            width: "120vw",
-            marginTop: "-25vh",
-            marginLeft: "-10wv",
-            height: "140vh",
-            background: "white",
+            // width: "120vw",
+            // marginTop: "-25vh",
+            // marginLeft: "-10wv",
+            // height: "140vh",
+            // background: "white",
             transform: this.state.show
               ? "translateY(0vh)"
               : "translateY(-120vh)",
@@ -100,15 +101,17 @@ class IndexPage extends Component {
           }}
         ></div>
         <p
-          style={{
-            position: "absolute",
-            top: "60vh",
-            right: "30vw",
-            fontSize: "5rem",
-            color: "white",
-            fontWeight: 100,
-            fontFamily: "Work Sans",
-          }}
+          style={
+            {
+              // position: "absolute",
+              // top: "60vh",
+              // right: "30vw",
+              // fontSize: "5rem",
+              // color: "white",
+              // fontWeight: 100,
+              // fontFamily: "Work Sans",
+            }
+          }
         >
           {this.state.count} %
         </p>
