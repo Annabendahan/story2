@@ -76,7 +76,7 @@ class Story extends Component {
           previousProjet: this.state.projet - 1,
         })
       }.bind(this),
-      700
+      1000
     )
   }
 

@@ -7,7 +7,9 @@ class Presentation extends Component {
       <div className="project-layout">
         <div className="project-layout__content">
           {" "}
-          <img className="me" src={mi} alt="" />
+          <div className="project-layout__img">
+            <img className="me" src={mi} alt="" />
+          </div>
           <p>
             {" "}
             Welcome to my website. I am anna bendahan, a freelance developer

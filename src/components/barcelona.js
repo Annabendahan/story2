@@ -7,7 +7,9 @@ class Barcelona extends Component {
       <div className="project-layout">
         <div className="project-layout__content">
           {" "}
-          <img className="billet" src={bcnb} alt="terrain" />
+          <div className="project-layout__img">
+            <img className="billet" src={bcnb} alt="terrain" />
+          </div>
           <p>
             So I went to Barcelona to <b>learn to code</b> at Le Wagon, and I
             loved it!

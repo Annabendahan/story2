@@ -68,7 +68,7 @@
   &__content {
     display: flex;
 
-    width: 80vw;
+    width: 90vw;
     height: 50vh;
     margin: auto;
     align-items: center;
@@ -82,7 +82,11 @@
       width: 80vw;
     }
     p {
-      padding: 20px;
+      padding: 10px;
+      @include breakpoint(s) {
+        max-width: 30vw;
+        padding: 40px;
+      }
       @include breakpoint(xl) {
         max-width: 30vw;
         padding: 40px;
@@ -93,6 +97,7 @@
   img,
   video {
     height: 50vh;
+
     z-index: 99;
     position: relative;
     box-sizing: border-box;

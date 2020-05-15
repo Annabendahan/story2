@@ -47,8 +47,11 @@ class Barcelona extends Component {
       <div className="project-layout">
         <div className="project-layout__content">
           {" "}
+          <div className="project-layout__img">
+            <img src={pic} alt="" />
+          </div>
           <p>
-            Back in paris, i worked in a digital agency, and then became a
+            Back in Paris, i worked in a digital agency, and then became a
             freelancer. I created a site for{" "}
             <b>
               <a href="https://alicethonnier.netlify.app/" target="blank">
@@ -58,10 +61,7 @@ class Barcelona extends Component {
             , a stylist & pattern maker, to show her brand and her different
             collections.
           </p>
-          <div className="alicepics">
-            {" "}
-            <img src={pic} alt="" />
-          </div>
+          <div className="alicepics"> </div>
         </div>
         <div className="line">
           <svg

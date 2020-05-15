@@ -7,11 +7,13 @@ class Childhood extends Component {
       <div className="project-layout">
         <div className="project-layout__content">
           {" "}
+          <div className="project-layout__img">
+            <video muted autoPlay loop playsInline>
+              <source src={childhood} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
           <p> I grew up in France and (looks like) childhood was nice !</p>
-          <video muted autoPlay loop playsInline>
-            <source src={childhood} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
         </div>
         <div className="line">
           <svg
