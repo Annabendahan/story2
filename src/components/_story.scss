@@ -213,3 +213,12 @@
     background: transparent; /* Chrome/Safari/Webkit */
   }
 }
+
+.wrapper {
+  background: red;
+  opacity: 0.4;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 12888;
+}

@@ -290,6 +290,7 @@ class Story extends Component {
     return (
       <div>
         <SEO title="Story" />
+        <div className="wrapper"> </div>
 
         <div className="header">
           <p>
